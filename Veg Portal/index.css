@@ -1,0 +1,306 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variable */
+:root{
+    --navbar-height:60px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+
+}
+/* logo and image */
+#logo{
+
+    margin: -12px 20px;
+
+}
+#logo img{
+    display: flex;
+    flex-direction: column;
+    height: 96px;
+    margin: 7px 3px;
+    
+
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Fredoka One', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li {
+    height: 23px;
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 12px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(146, 184, 108);
+}
+
+/* Home Section */
+#home{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 24px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('vegbk.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 108%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.86;  
+}
+#home h1{
+    color: white;
+    text-align: center;
+    text-shadow:-3px -3px 6px rgb(18, 29, 18);
+    transition: all 1s ease-in;
+    font-family: 'Bree Serif', serif;
+    margin-top: 35px;
+} 
+#home h1:hover{
+    height: 130px;
+    width: 1000px;
+    font-size: 6.5em;
+    color: black;
+    text-shadow: 5px 4px 6px white;
+    box-shadow: 8px 9px 10px black;
+    opacity: 0.80;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+
+    color:white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Orelega One', cursive;
+    text-shadow:2px 2px 3px rgb(10, 37, 11);
+    padding: 12px 6px;
+    margin: 4px -14px;
+    cursor: pointer;
+
+}
+#home p:hover{
+    color: black;
+    background-color: rgb(113, 169, 57);
+    text-shadow:2px 2px 3px rgb(243, 248, 243);
+    border-radius: 12px;
+    padding: 10px 8px;
+    opacity: 0.8;
+}
+/* Services Section */
+.services-container{
+    position: relative;
+}
+.services-container::before{
+    content: "";
+    position: absolute;
+    margin: 16px 0px;
+    width: 100%;
+    height: 103%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('back1.jpg') no-repeat center center/cover;
+
+}
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid green;
+    padding: 18px;
+    margin: -25px 3px;
+    border-radius: 22px;
+    background: rgb(202, 223, 202);
+    cursor: pointer;
+}
+#services .box:hover{
+    background-color: rgb(132, 189, 85);
+    color: black;
+}
+#services .box img{
+    height: 230px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* client section */
+#client-section{
+    height: 320px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('back3.jpg');
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 2px;
+}
+#client img{
+    height: 110px;
+    cursor: pointer;
+    padding: 12px 13px;
+    border-radius: 8px;
+}
+#client img:hover{
+    background-color: rgb(228, 238, 228);
+
+    
+}
+/* Contacts Section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    margin: 28px 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('contact.jpg') no-repeat center center/cover;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.4rem;
+    color: rgb(19, 52, 19);
+    text-shadow: 1px 1px 2px rgb(197, 223, 183);
+    font-family: 'Bree Serif', serif;
+    
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: rgb(209, 238, 209);
+}
+#contact-box input:hover{
+    background-color: rgb(177, 204, 150);
+}
+#contact-box textarea:hover{
+    background-color: rgb(177, 204, 150);
+}
+#submit-box input{
+    width: 100%;
+    margin: 12px 13px;
+    background-color: rgb(32, 52, 32);
+    color: white;
+    text-shadow: 1px 1px 2px rgb(136, 159, 90);
+    font-family: 'Fredoka One', cursive;
+    width: 100%;
+    cursor: pointer;
+    
+}
+#submit-box input:hover{
+    background-color: rgb(114, 117, 114);
+    color: black;
+}
+footer{
+    background: rgb(5, 32, 5);
+    color: white;
+    padding: 10px 22px;
+    
+}
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 13px ;
+    font-family: 'Bree Serif', serif;
+    color: rgb(34, 73, 34);
+    text-shadow: 2px 2px 2px black;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(22, 51, 22);
+    text-shadow: 2px 2px 2px rgb(127, 110, 33);
+}
+.btn{
+    padding: 10px 33px;
+    border: 3px solid rgb(20, 25, 20);
+    background-color: rgb(6, 41, 6);
+    color: rgb(226, 214, 214);
+    margin: 5px 12px;
+    font-size: 1.5rem;
+    border-radius: 22px;
+    cursor: pointer;
+    text-shadow:1px 2px 2px rgb(110, 142, 62);
+    font-family: 'Fredoka One', cursive;
+}
+.btn:hover{
+    background-color: rgb(146, 186, 143);
+    color: black;
+    text-shadow: 1px 2px 2px rgb(241, 243, 241);
+    border: 2px solid rgb(63, 78, 63);      
+}
+.center{
+    text-align: center;
+}
+
